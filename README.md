@@ -1,1 +1,1 @@
-# test
+# Тест по frontend для SkyNet
