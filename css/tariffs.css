@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.speed {
+  display: inline-block;
+  height: 100%;
+  color: white;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.free_opt {
+font-size: 18px;
+}
+.price, .speed, .element_link {
+  font-size: 20px;
+}
+.free_opt, .price, .tariff {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.tariff_third_screen {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.element_link_margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.element_link{
+  color: #007aff;
+  text-decoration: none;
+}
+.month, .month-hr{
+  margin-bottom: 10px;
+}
+.month, .tariff_third_screen{
+  color: #82c12b;
+}
+.active, .activate{
+  color: #aaaaaa;
+}
+.line{
+  background-color: #efeff4;
+  border-top: 1px solid #a7a7aa;
+  border-bottom: 1px solid #c8c7cc;
+  width: 100%;
+}
+.main-line{
+  height: 50px;
+}
+.secondary-line{
+  height: 30px;
+}
+.ground{
+  background-color: #70603e;
+}
+.water, .water_hd{
+  background-color: #0075d9;
+}
+.fire, .fire_hd{
+  background-color: #e74807;
+}
+.rub{
+  height: 15px;
+}
+.price_per_month{
+  font-size: 25px;
+}
+.tariff{
+  color: #82c12b;
+  font-size: 25px;
+}
+.shift{
+  padding-left:20px;
+}
+.left_col,
+.right_col,
+.left_col_second_screen,
+.right_col_second_screen{
+	display: inline-block;
+	vertical-align: middle;
+}
+.right_col{
+  color:#c7c7cc;
+  font-size: 24px;
+  cursor: pointer;
+}
+.left_col_second_screen, .right_col_second_screen, .wrap{
+  margin: 0;
+  padding: 0;
+}
+.right_col_second_screen{
+  color:#c7c7cc;
+  font-size: 24px;
+  cursor: pointer;
+}
+.tarif_title_left_col,
+.tarif_title_right_col{
+	display: inline-block;
+	margin: 1em;
+	vertical-align: middle;
+    background-color: #f7f7f8;
+	padding: 0;
+}
+.tarif_title{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tarif_title_left_col{
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 50px;
+  width: 30px;
+  color:#92c946;
+  z-index: 2;
+  cursor: pointer;
+  position: absolute;
+}
+.tarif_title_right_col{
+  margin: 0;
+  padding: 0;
+  text-align: center;  
+  height: 60px;
+  line-height: 60px;
+  z-index: 1;
+  width: 100%;
+}
+.botton{
+  background-color: #82c12b;
+  color: #ffffff;
+  margin-left:20px;
+  margin-right:20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.choose{
+  white-space: nowrap;
+  overflow: hidden;
+}
+.font-enlarge{
+  font-size: 25px;
+}
+@media(max-width: 640px){
+  .columns{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .left_col, .left_col_second_screen{
+    width: 80%;
+  }
+}
+@media(min-width: 640px) and (max-width: 1024px){
+  .columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    justify-content: space-between; 
+  }
+  .left_col{
+    width: 85%;
+  }
+  .left_col_second_screen{
+    width: 35%;
+  }
+}
+@media(min-width: 1024px){
+  .columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    justify-content: space-between; 
+  }
+  .left_col{
+    width: 90%;
+  }
+  .left_col_second_screen{
+    width: 30%;
+  }
+}
