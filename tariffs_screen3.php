@@ -1,14 +1,4 @@
 <?php 
-	
-function find_max_price_per_month($el_val){
-	$step = 0;
-	$max_price_per_month = 0;
-	  foreach($el_val as $t => $opt){
-		$price_per_month = $opt['price']/$opt['pay_period'];
-		if ($max_price_per_month < $price_per_month) $max_price_per_month = $price_per_month;
-    }
-    return $max_price_per_month;
-}
 
 include("additional_functions.php");
 
